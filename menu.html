@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Sansita+Swashed&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <a class="navbar-brand text-white" href="#">BURGER</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#"><i class="bi bi-search"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--search box  -->
+  <input type="text" placeholder="Search here..." id="search" class="search-box" onkeyup="search()">
+
+
+  <!-- background images -->
+
+  <table width="100%">
+    <tr>
+      <td class="bg-image1">
+        <img src="img/menu-img1.png" alt="">
+      </td>
+      <td class="bg-image2">
+        <img src="img/menu-img2.png" alt="">
+      </td>
+    </tr>
+    <tr>
+      <td class="bg-image3">
+        <img src="img/menu-img3.png" alt="">
+      </td>
+      <td class="bg-image4">
+        <img src="img/menu-img3.png" alt="">
+      </td>
+      <td class="bg-image5">
+        <img src="img/menu-img4.png" alt="">
+      </td>
+    </tr>
+    <tr>
+      <td class="bg-image6">
+        <img src="img/menu-img5.png" alt="">
+      </td>
+      <td class="bg-image7">
+        <img src="img/menu-img6.png" alt="">
+      </td>
+    </tr>
+  </table>
+
+  <h1 id="menu-tittle" class="menu-h1">Menu</h1>
+
+  <!-- Burgers -->
+
+  <h4 class="menu-h4">Burgers </h4>
+
+  <div id="carousel1" class="carousel slide py-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel1" data-slide-to="1"></li>
+      <li data-target="#carousel1" data-slide-to="2"></li>
+      <li data-target="#carousel1" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+
+
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img1.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Classic Burger (Large)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1001</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.750.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary" id="btn-add">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img1.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Classic Burger (Regular)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1002</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.1275.00 <span
+                    class="discount">Rs.1500.00</span></p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img2.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Turkey Burger</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1003</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.1600.00</p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img3.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Chicken Burger (Large)</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1004</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.1400.00</p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img3.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Chicken Burger (Regular)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1005</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.640.00 <span
+                    class="discount">Rs.800.00</span></p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img4.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Cheese Burger (Large)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1006</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.1000.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img4.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Cheese Burger (Regular)</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1007</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.600.00</p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img5.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Bacon Burger</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1008</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.552.00 <span
+                      class="discount">Rs.650.00</span></p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img6.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Shawarma Burger</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1009</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.800.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img7.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Olive Burger</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1010</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.1800.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img8.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Double-Cheese Burger</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1012</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.1000.00 <span
+                      class="discount">Rs.1250.00</span></p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img9.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1" style="font-size: 14px;">Crispy Chicken Burger (Regular)</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1013</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.1200.00</p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img9.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1" style="font-size: 14px;">Crispy Chicken Burger (Large)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1014</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.1440.00 <span
+                    class="discount">Rs.1600.00</span></p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img10.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Paneer Burger</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1015</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.900.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+
+
+  <!-- Submarines -->
+
+  <h4 class="menu-h4">Submarines </h4>
+
+  <div id="carousel2" class="carousel slide py-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel2" data-slide-to="1"></li>
+      <li data-target="#carousel2" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img11.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1" style="font-size: 13px;">Crispy Chicken Submarine (Large)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1016</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.2000.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img11.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1" style="font-size: 12.5px;">Crispy Chicken Submarine (Regular)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1017</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.1500.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img12.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Chicken Submarine (Large)</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1018</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.1746.00 <span
+                      class="discount">Rs.1800.00</span></p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img12.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Chicken Submarine (Regular)</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1019</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.1400.00</p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img13.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Grinder Submarine</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1020</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.2300.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img14.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Cheese Submarine</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1021</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.2200.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img15.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1" style="font-size: 12px;">Double Cheese n Chicken Submarine</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1022</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.1596.00 <span
+                      class="discount">Rs.1900.00</span></p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img16.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Special Horgie Submarine</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1023</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.2800.00</p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img17.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">MOS Special Submarine</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1024</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.3000.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Fries -->
+
+  <h4 class="menu-h4">Fries </h4>
+
+  <div id="carousel3" class="carousel slide py-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel3" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img18.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Steak Fries (Large)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1025</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.1200.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img18.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Steak Fries (Medium)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1026</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.600.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img19.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">French Fries (Large)</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1027</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.800.00</p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img19.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">French Fries (Medium)</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1028</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.650.00</p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img19.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">French Fries (Small)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1029</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.450.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img20.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Sweet Potato Fries (Large)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1030</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.600.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Pasta -->
+
+  <h4 class="menu-h4">Pasta </h4>
+
+  <div id="carousel4" class="carousel slide py-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel4" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel4" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img21.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Chicken n Cheese Pasta</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1031</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.1360.00 <span
+                    class="discount">Rs.1600.00</span></p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img22.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Chicken Penne Pasta</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1032</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.1700.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img23.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Ground Turkey Pasta Bake</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1033</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.2610.00 <span
+                      class="discount">Rs.2900.00</span></p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top img24" height="170px" src="menu-img/img24.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Creamy Shrimp Pasta</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1034</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.2000.00</p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img25.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Lemon Butter Pasta</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1035</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.1950.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img26.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Tagliatelle Pasta</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1036</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.2376.00 <span
+                    class="discount">Rs.2400.00</span></p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img27.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Baked Ravioli</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1037</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.1980.00 <span
+                      class="discount">Rs.2000.00</span></p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel4" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel4" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Chicken  -->
+
+  <h4 class="menu-h4">Chicken </h4>
+
+  <div id="carousel5" class="carousel slide py-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel5" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel5" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img28.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Fried Chicken (Small)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1038</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.1200.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img28.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Fried Chicken (Regular)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1039</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.2070.00 <span
+                    class="discount">Rs.2300.00</span></p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img28.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Fried Chicken (Large)</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1040</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.2945.00 <span
+                      class="discount">Rs.3100.00</span></p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" height="170px" src="menu-img/img29.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title my-1">Hot Wings (Large)</h5>
+                  <p class="card-text my-0"><span class="span">Item code - </span>B1041</p>
+                  <p class="card-text my-0"><span class="span">Price -</span> Rs.2400.00</p>
+                  <a href="#" class="btn btn-primary my-1">Buy $</a>
+                  <a href="#" class="btn btn-primary">Add Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="menu-contaner">
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img30.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">Devilled Chicken (Large)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1042</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.900.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="170px" src="menu-img/img31.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title my-1">BBQ Chicken (Regular)</h5>
+                <p class="card-text my-0"><span class="span">Item code - </span>B1043</p>
+                <p class="card-text my-0"><span class="span">Price -</span> Rs.2100.00</p>
+                <a href="#" class="btn btn-primary my-1">Buy $</a>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel5" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel5" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Beverages  -->
+
+  <h4 class="menu-h4">Beverages </h4>
+
+  <div class="menu-contaner py-5">
+    <div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" height="170px" src="menu-img/img32.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title my-1">Pepsi (330ml)</h5>
+          <p class="card-text my-0"><span class="span">Item code - </span>B1044</p>
+          <p class="card-text my-0"><span class="span">Price -</span> Rs.940.00 <span class="discount">Rs.990.00</span>
+          </p>
+          <a href="#" class="btn btn-primary my-1">Buy $</a>
+          <a href="#" class="btn btn-primary">Add Cart</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" height="170px" src="menu-img/img33.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title my-1">Coca-Cola (330ml)</h5>
+          <p class="card-text my-0"><span class="span">Item code - </span>B1045</p>
+          <p class="card-text my-0"><span class="span">Price -</span> Rs.1230.00</p>
+          <a href="#" class="btn btn-primary my-1">Buy $</a>
+          <a href="#" class="btn btn-primary">Add Cart</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="170px" src="menu-img/img34.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title my-1">Sprite (330ml)</h5>
+            <p class="card-text my-0"><span class="span">Item code - </span>B1046</p>
+            <p class="card-text my-0"><span class="span">Price -</span> Rs.1455.00 <span
+                class="discount">Rs.1500.00</span></p>
+            <a href="#" class="btn btn-primary my-1">Buy $</a>
+            <a href="#" class="btn btn-primary">Add Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div class="card" style="width: 18rem;">
+          <img id="img" class="card-img-top" height="170px" src="menu-img/img35.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 id="title" class="card-title my-1">Mirinda (330ml)</h5>
+            <p class="card-text my-0"><span class="span">Item code - </span><span id="item-code">B1047</span></p>
+            <p class="card-text my-0"><span class="span">Price -</span> <span id="price">Rs.790.00</span> <span
+                class="discount">Rs.850.00</span></p>
+            <a class="btn btn-primary my-1">Buy $</a>
+            <a class="btn btn-primary" onclick="addcart('title','img','item-code','price')">Add Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Cart -->
+
+
+  <div id="cart-contaner" class="menu-contaner py-5">
+
+  </div>
+
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
