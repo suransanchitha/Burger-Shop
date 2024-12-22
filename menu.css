@@ -122,6 +122,7 @@
 
 .span {
   font-weight: 1000;
+  color: white;
 }
 
 .btn-primary {
@@ -165,4 +166,33 @@
 .search-box::placeholder {
   color: gray;
   font-style: italic;
+}
+
+.menu-item.hide {
+  display: none;
+}
+
+.order-contaner {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  text-align: center; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap;
+  gap: 30px;
+  /* padding: 5px; */
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #12372a !important;
+}
+
+.orders-price{
+  display: none;
+}
+
+.orders-price.show{
+  display: block;
 }
